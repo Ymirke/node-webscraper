@@ -1,0 +1,31 @@
+{
+  "name": "webscraper",
+  "version": "1.0.0",
+  "description": "Simple node js webscraper template setup.",
+  "main": "scraper.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "chromeMac": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --remote-debugging-port=9222 --no-first-run --no-default-browser-check --user-data-dir=$(mktemp -d -t 'chrome-remote_data_dir')",
+    "chromeWindows": "start chrome.exe –remote-debugging-port=9222",
+    "start": "node scraper.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ymirke/node-webscraper.git"
+  },
+  "author": "Ymir Egilson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ymirke/node-webscraper/issues"
+  },
+  "homepage": "https://github.com/Ymirke/node-webscraper#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.3.3",
+    "lodash.ceil": "^4.0.4",
+    "puppeteer": "^5.3.1"
+  }
+}
